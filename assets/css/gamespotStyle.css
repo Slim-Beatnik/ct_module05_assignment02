@@ -1,0 +1,367 @@
+/* setup fonts */
+html {
+    font-family: -apple-system, ".SFNSText-Regular", BlinkMacSystemFont, "San Francisco", "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Lucida Grande", sans-serif;
+}
+
+html, body {
+    overflow-x: hidden !important;
+    width: 100%;
+    height: 100%;
+}
+
+.roboto {
+    font-family: "Roboto", serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.222;
+}
+
+/* #superContainer {
+} */
+
+#headerContainer {
+    width:100vw !important;
+    z-index: 1000;
+}
+
+
+
+ /* top links */
+#navHighlightedLinks {
+    padding: 20px 15px 20px 15px;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    color: #666;
+    -webkit-overflow-scrolling: touch; /* had help finding compatibility */
+}
+
+/* had help finding compatibility */
+#navHighlightedLinks::-webkit-scrollbar {
+    height: none;
+}
+
+/* had help finding compatibility */
+#navHighlightedLinks::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* spans with parent matching parent id except last, put a | after */
+#navHighlightedLinks span:not(:last-child)::after {
+    content: '|';
+    font-size: x-small !important;
+    font-weight: lighter;
+    color: #666;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+#navHighlightedLinks a {
+    font-size: xx-small !important;
+}
+
+/* override button border */
+#dropdownMenuButton {
+    border: 0 !important;
+}
+
+#expandedMenu {
+    color: #262626 !important;
+    text-decoration: none !important;
+    display: inline-block;
+    position: relative;
+    padding: 1rem 0 0.8rem 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out; 
+}
+
+#expandedMenuLink:hover {
+    border-bottom: 2px solid #de00a4;
+}
+
+
+/* link colors */
+#navHighlightedLinks a {
+    text-decoration: none !important;
+    stroke-opacity: none !important;
+    color: #666
+}
+
+#expandedMenu, #carouselContainer, .card-text {
+    a {
+        text-decoration: none !important;
+        stroke-opacity: none !important;
+        color: #262626 !important;
+    }
+}
+
+#navHighlightedLinks, #expandedMenuLink, .nav-item, .card-text {
+    a:hover {
+        color: #de004a !important;
+    }
+}
+
+[hidden] {
+    display: none;
+}
+
+/* override navbar */
+.navbar .container-fluid {
+    padding-left: 0 !important;
+}
+
+#navDropdown {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* override nav-link */
+.nav-link {
+    color: #262626 !important;
+    text-decoration: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out; 
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #de00a4;
+}
+
+footer {
+    position: relative;
+    background-color: #2b2d31;
+    height: 25%;
+}
+
+/********************HOME*******************/
+
+#homeContainer {
+    height: 100%;
+}
+
+/* override rounded border on cards */
+#topArticles, .carousel-item {
+
+    .card, .card-img, .card .card-img-top {
+        border-radius: unset !important;
+        border: none !important;
+    }
+}
+
+h3 {
+    font-weight: bold !important;
+}
+h5 {
+    font-weight: 450 !important;
+    opacity: 80%;
+}
+
+#topArticles .card {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+#topArticles .card-img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+#topArticles .card-img-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+/* set height to large screens */
+#topArticles .card, #topArticles .card-img {
+    height: 420px;
+}
+
+/* calc to show diff between breakpoints */
+.img-overlay-icon {
+    height: calc(40px + 40px);
+    width: calc(40px + 40px);
+    border-radius: 9999em;
+    background-color: white;
+}
+
+/* calc to show diff between breakpoints */
+.icon{
+    height: calc(16px + 20px);
+    width: calc(16px + 20px);
+}
+
+/* set default height to large screens -- calc to show diff between breakpoints */
+.card-spacer {
+    height: calc(225px + 60px);
+}
+
+/* set default height to large screens -- calc to show diff between breakpoints */
+.card:hover {
+    .card-spacer {
+        height: calc(135px + 60px);
+        transition: height 0.1s ease-in-out;
+    }
+    .card-img {
+        opacity: 60%;
+        transition: opacity 0.2s ease-in-out;
+    }
+}
+
+/* carouselContainer a and a:hover See: #expandedMenuLink */
+
+#carouselContainer {
+    width: 1000px;
+}
+
+#carouselContainer h2 {
+    color: #de004a;
+    font-size: calc(22px + 4*((100vw - 320px) / 960));
+}
+
+#carouselHeader {
+    margin-bottom: 0.8em !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    left: unset;
+    right: 0 !important;
+    bottom: 0 !important;
+    position: relative;
+    
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    bottom: 13px; /* you guessed it, I checked. */
+    right: 0;
+    filter: unset !important;
+    fill: #262626 !important;
+    z-index: 1000 !important;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: #262626;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.carousel-control-prev-icon {
+    /* gross */
+    right: 36px;
+    bottom: -17px
+}
+
+.carouselContainer .card .card-body {
+    text-align: justify;
+}
+
+#carouselContainer .card-text {
+    color: #262626;
+    font-weight: 400 !important;
+}
+
+#carouselContainer .card-text a:hover {
+    color: #de004a !important;
+}
+
+/*********************CONTACT*************************/
+
+.input-group .input-group-text {
+    background-color: #2b2d31 !important;
+    color: #ebcc0e !important;
+    border-radius: 0 !important;
+    border-color: transparent !important;
+
+}
+
+.form-control {
+    border-radius: 0 !important;
+    border-color: transparent !important;
+}
+
+.form-check {
+    stroke-width: 2px;
+    border-style: groove;
+}
+
+/**************************DEALS****************************/
+
+table td {
+    color: #ebcc0e !important;
+    background-color: #2b2d31 !important;
+}
+
+table tr:not(:first-child) {
+    text-align: center;
+}
+
+table tr:hover {
+    td {
+        color:#de004a !important;
+    }
+}
+
+table th:nth-child(5) {
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+table td:nth-child(5) {
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+#dealsSpacer {
+    height: 180px;
+    width: 100%;
+}
+
+/********************CUSTOM BREAKPOINTS*******************/
+
+/* Height for screens 1280px and smaller set to 360px*/
+@media (max-width: 1280px) {
+    
+    #topArticles .card,
+    #topArticles .card-img {
+        height: 360px; 
+    }
+
+    .card-spacer {
+        height: 225px;
+    }
+
+    .card:hover {
+
+        .card-spacer {
+            height: 135px;
+        }
+    }
+}
+
+  /* set dimensions for smaller screens */
+@media (max-width: 640px) {
+    #topArticles .img-overlay-icon {
+        width: 40px;
+        height: 40px; 
+
+    }
+    #topArticles .icon {
+        width: 16px;
+        height: 16px; 
+    }
+}
