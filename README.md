@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage">
+  <a href="https://github.com/Slim-Beatnik/ct_module05_assignment02">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -150,14 +150,14 @@ function addFeedback(message) {
 }  
 console.log(addFeedback("Great website\!")); // \["Great website\!"\]
     <br />
-    <a href="https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Slim-Beatnik/ct_module05_assignment02"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage">View Demo</a>
+    <a href="https://github.com/Slim-Beatnik/ct_module05_assignment02">View Demo</a>
     &middot;
-    <a href="https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/Slim-Beatnik/ct_module05_assignment02/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
-    <a href="https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/Slim-Beatnik/ct_module05_assignment02/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -197,10 +197,33 @@ console.log(addFeedback("Great website\!")); // \["Great website\!"\]
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 I'm attempting to recreate the <a href="https://www.gamespot.com/">gamespot website</a>
+
 To be fair I haven't been there since: <a href="http://web.archive.org/web/20050308094734/http://www.gamespot.com/"> - gamespot circa 2000 - 2009 </a>
 
+Holy cow...
+That's some fancy stuff on the newest version of their website. I shuffled through the source code and found their svg images, so I used a few of them just to get a handle on how they worked.
+
+While browsing their source code I also found that they're using a different framework than bs5 and it only gave vague hinds as to how they set up their page.
+
+The javascript and the overlay cards on the home page are by far the most time intensive details. Somewhere between the overlay images and the carousel of overlay images bs5 has mostly clicked. I'm still somewhat dissapointed with how many hidden margins and what not there are to work around. But I got there.
+
+Everything loads into a div on the index.html page and some of the challenges that brings is when to add event listeners. I've got a custom function in my .js file to swapMainContent('pageName.html) and I put the event listeners for checkboxes on the deals page as a conditional after the fetch -> then.
+
+This assignment has overall, especially with minor life events getting in the way, lead to a feeling of accomplishment.
+But I am extremely relieved to finally be moving forward.
+
+My main take aways are as follows:
+o   Don't trust your eyes, if any variable names could be spelled wrong type, the word out correctly and highlight it in Vs. If a line doesn't highlight it's spelled incorrectly.
+I had spelled topAritlces instead of my css id #topArticles it was an embarassingly long time to find it, because my brain was autocorrecting it as I read it.
+
+o   Order matters in all things. Have a good grasp on what's loaded when and be sure to use console.log to help debug the order in which things are happening.
+
+o   querySelectorsAll is a fickle beast. There are some fancy ways to search for things and that doesn't mean you'll get what you want.
+
+o   I learned quite a bit including css nesting. While some may complain about readability, proper indentation is key. I found a VsCode extension that is helpful: <a href="https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow">Indent Rainbow</a> highlights the indents different colors and that's useful for matching up which tags are ending, especially when you've got 128 div tags.
 
 
+Ok, I'm REALLY, really, done with this. Onward and upward.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -234,7 +257,7 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage.git
+   git clone https://github.com/Slim-Beatnik/ct_module05_assignment02.git
    ```
 3. Install NPM packages
    ```sh
@@ -271,7 +294,7 @@ This is an example of how to list things you need to use the software and how to
 - [ ] Feature 3
     - [ ] Nested Feature
 
-See the [open issues](https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Slim-Beatnik/ct_module05_assignment02/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -295,7 +318,7 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage/graphs/contributors">
+<a href="https://github.com/Slim-Beatnik/ct_module05_assignment02/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage" alt="contrib.rocks image" />
 </a>
 
@@ -315,7 +338,7 @@ Distributed under the project_license. See `LICENSE.txt` for more information.
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - totem64@gmail.com
 
-Project Link: [https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage](https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage)
+Project Link: [https://github.com/Slim-Beatnik/ct_module05_assignment02](https://github.com/Slim-Beatnik/ct_module05_assignment02)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -335,15 +358,15 @@ Project Link: [https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/ma
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage.svg?style=for-the-badge
-[contributors-url]: https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage/graphs/contributors
+[contributors-url]: https://github.com/Slim-Beatnik/ct_module05_assignment02/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage.svg?style=for-the-badge
-[forks-url]: https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage/network/members
+[forks-url]: https://github.com/Slim-Beatnik/ct_module05_assignment02/network/members
 [stars-shield]: https://img.shields.io/github/stars/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage.svg?style=for-the-badge
-[stars-url]: https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage/stargazers
+[stars-url]: https://github.com/Slim-Beatnik/ct_module05_assignment02/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage.svg?style=for-the-badge
-[issues-url]: https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage/issues
+[issues-url]: https://github.com/Slim-Beatnik/ct_module05_assignment02/issues
 [license-shield]: https://img.shields.io/github/license/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage.svg?style=for-the-badge
-[license-url]: https://github.com/Slim-Beatnik/Coding-Temple-Assignments/tree/main/ct-Module05-bootstrap-Assignment02-recreatePage/blob/master/LICENSE.txt
+[license-url]: https://github.com/Slim-Beatnik/ct_module05_assignment02/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/3dkylehill
 [product-screenshot]: images/screenshot.png
